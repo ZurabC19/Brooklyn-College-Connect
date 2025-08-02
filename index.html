@@ -1,0 +1,70 @@
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+  <ul>
+    <!-- Anchor links to sections -->
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#featured">Videos</a></li>
+    <li><a href="#activities">Activities</a></li>
+  </ul>
+</div>
+
+<!-- THEME TOGGLE BUTTON  -->
+<div class="theme-toggle" id="theme-toggle">☀️</div>
+
+<!-- HEADER SECTION -->
+<header class="header-container">
+  <div class="header-item">
+    <h1>BC Connect</h1>
+    <h3>One calendar to unite all college events.</h3>
+  </div>
+
+  <!-- Browse/Add buttons -->
+  <div class="header-buttons">
+    <a href="#activities" class="header-link-btn">Browse Events</a>
+    <a href="#activities" class="header-link-btn">Add Your Event</a>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2>About the Website</h2>
+  <p>...</p>
+</section>
+
+<!-- CALENDAR SECTION -->
+<section id="schedule">
+  <h2>Schedule</h2>
+  <p>...</p>
+  <div id="calendar" class="calendar-grid"></div>
+</section>
+
+<!-- VIDEO CAROUSEL -->
+<section id="featured">
+  <h2>Featured Videos</h2>
+  <div class="video-carousel">
+    <button id="prev-video" class="carousel-btn">❮</button>
+    <iframe id="video-frame" src="..." allowfullscreen></iframe>
+    <button id="next-video" class="carousel-btn">❯</button>
+  </div>
+</section>
+
+<!-- ACTIVITY SECTION -->
+<section id="activities">
+  <h2>Upcoming Activities</h2>
+  <div id="activity-list" class="activity-grid"></div>
+
+  <!-- Form to create a new activity -->
+  <h3>Create a New Activity</h3>
+  <form id="activity-form">
+    <input type="text" id="activity-title" placeholder="Activity Title" required />
+    <input type="text" id="activity-desc" placeholder="Short Description" required />
+    <input type="date" id="activity-date" required />
+    <button type="submit">Add Activity</button>
+  </form>
+</section>
+
+<!-- PAGE FOOTER -->
+<footer class="footer">
+  © 2025 BC Connect · All events, one calendar
+</footer>

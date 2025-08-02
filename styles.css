@@ -1,0 +1,95 @@
+/* BASE STYLES */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #2b1113; /* dark background */
+  color: #f0e6cc;       /* light text */
+}
+
+/* NAVIGATION BAR */
+.navbar ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background: #6a1b1f;
+}
+
+/* HEADER SECTION */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* GENERAL BUTTON STYLES */
+button {
+  background: #f6cc68;
+  color: #2b1113;
+}
+
+/* ACTIVITY FORM STYLES */
+#activity-form input {
+  background: #3a1e20;
+  color: #f0e6cc;
+}
+
+/* RSVP CARD */
+.activity-card {
+  background: #3a1e20;
+  color: #f0e6cc;
+}
+
+/* RSVP ENTRY */
+.rsvp-entry {
+  background: #533132;
+  color: #f7dfaa;
+}
+
+/* VIDEO CAROUSEL ARROWS */
+.carousel-btn {
+  color: #f6cc68;
+  font-size: 40px;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  background: #6a1b1f;
+  color: #f0e6cc;
+}
+
+/* ERROR FIELD */
+.error {
+  border: 2px solid #e27272;
+  background: #5c2323;
+}
+
+@media (max-width: 700px) {
+  .video-carousel {
+    flex-direction: column;
+  }
+}
+
+/* CALENDAR */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #3a1e20;
+}
+
+.calendar-day {
+  background: #4b2a2c;
+  color: #ffecc2;
+}
+
+.event {
+  background: #f6cc68;
+  color: #2b1113;
+}
+
+/* BRIGHT MODE STYLES (overrides) */
+body.bright-mode {
+  background: #f8ede8;
+  color: #3a1e1e;
+}
