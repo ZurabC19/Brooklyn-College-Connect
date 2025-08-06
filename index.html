@@ -1,70 +1,91 @@
-<!-- NAVIGATION BAR -->
-<div class="navbar">
-  <ul>
-    <!-- Anchor links to sections -->
-    <li><a href="#about">About</a></li>
-    <li><a href="#schedule">Schedule</a></li>
-    <li><a href="#featured">Videos</a></li>
-    <li><a href="#activities">Activities</a></li>
-  </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BCConnect</title>
+  <link rel="icon" href="img/bc.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<div id="success-modal" class="modal">
+  <div class="modal-container">
+    <p id="modal-text">Thanks for RSVPing!</p>
+    <img id="modal-image" src="img/dog.png" alt="Thanks Image" />
+  </div>
 </div>
 
-<!-- THEME TOGGLE BUTTON  -->
-<div class="theme-toggle" id="theme-toggle">☀️</div>
-
-<!-- HEADER SECTION -->
-<header class="header-container">
-  <div class="header-item">
-    <h1>BC Connect</h1>
-    <h3>One calendar to unite all college events.</h3>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#featured">Videos</a></li>
+      <li><a href="#activities">Activities</a></li>
+    </ul>
   </div>
 
-  <!-- Browse/Add buttons -->
-  <div class="header-buttons">
-    <a href="#activities" class="header-link-btn">Browse Events</a>
-    <a href="#activities" class="header-link-btn">Add Your Event</a>
-  </div>
-</header>
+  <div class="theme-toggle" id="theme-toggle">☀️</div>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-  <h2>About the Website</h2>
-  <p>...</p>
-</section>
 
-<!-- CALENDAR SECTION -->
-<section id="schedule">
+  <header class="header-container">
+    <div class="header-item">
+      <h1>BC Connect</h1>
+      <h3>One calendar to unite all college events.</h3>
+    </div>
+<div class="header-buttons">
+  <a href="#activities" class="header-link-btn">Browse Events</a>
+  <a href="#activities" class="header-link-btn">Add Your Event</a>
+</div>
+  </header>
+
+  <section id="about">
+    <h2>About the Website</h2>
+    <p>BC Connect is a centralized platform to showcase all BC events — from academic workshops to club socials and sports meets.</p>
+    <p>It’s designed for students, faculty, and staff to stay in sync with what's happening around campus.</p>
+    <p>With powerful search, filters, and RSVP features, it helps boost event visibility and community involvement.</p>
+  </section>
+
+  <section id="schedule">
+    <section id="schedule">
   <h2>Schedule</h2>
-  <p>...</p>
+    <p>This calendar provides a complete view of the month's activities across departments and clubs.</p>
   <div id="calendar" class="calendar-grid"></div>
-</section>
 
-<!-- VIDEO CAROUSEL -->
-<section id="featured">
+
+  <section id="featured">
   <h2>Featured Videos</h2>
   <div class="video-carousel">
     <button id="prev-video" class="carousel-btn">❮</button>
-    <iframe id="video-frame" src="..." allowfullscreen></iframe>
+    <iframe id="video-frame" width="560" height="315"
+            src="https://www.youtube.com/embed/JxwD_vrFxQw"
+            title="Campus Event Highlights" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
     <button id="next-video" class="carousel-btn">❯</button>
   </div>
 </section>
 
-<!-- ACTIVITY SECTION -->
-<section id="activities">
-  <h2>Upcoming Activities</h2>
-  <div id="activity-list" class="activity-grid"></div>
+  <section id="activities">
+    <h2>Upcoming Activities</h2>
+    <div id="activity-list" class="activity-grid">
+      
+    </div>
 
-  <!-- Form to create a new activity -->
-  <h3>Create a New Activity</h3>
-  <form id="activity-form">
-    <input type="text" id="activity-title" placeholder="Activity Title" required />
-    <input type="text" id="activity-desc" placeholder="Short Description" required />
-    <input type="date" id="activity-date" required />
-    <button type="submit">Add Activity</button>
-  </form>
-</section>
+    <h3>Create a New Activity</h3>
+<form id="activity-form">
+  <input type="text" id="activity-title" placeholder="Activity Title" required />
+  <input type="text" id="activity-desc" placeholder="Short Description" required />
+  <input type="date" id="activity-date" required />
+  <button type="submit">Add Activity</button>
+</form>
 
-<!-- PAGE FOOTER -->
-<footer class="footer">
-  © 2025 BC Connect · All events, one calendar
-</footer>
+  </section>
+
+  <footer class="footer">
+    © 2025 BC Connect · All events, one calendar
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
